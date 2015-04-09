@@ -1,4 +1,4 @@
-FROM aviata/ubuntu
+FROM aviata/ubuntu-java8
 #TODO: add files from storm/ to this directory storm/supervisor
 
     RUN date -u +"%Y-%m-%d %H:%M%S?" && wget -q http://mirrors.sonic.net/apache/storm/apache-storm-0.9.4/apache-storm-0.9.4.tar.gz -O tmp.gz && tar -xzf tmp.gz -C /opt
