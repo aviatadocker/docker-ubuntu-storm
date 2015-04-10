@@ -16,6 +16,3 @@ FROM aviata/ubuntu-java8
 
 
     RUN date -u +"%Y-%m-%d %H:%M%S?" && mkdir -p "$(dirname "$SUPER_CONFIG")" && echo [supervisord] | tee -a /etc/supervisor/supervisord.conf ; echo nodaemon=true | tee -a /etc/supervisor/supervisord.conf
-
-    RUN date -u +"%Y-%m-%d %H:%M%S?" && echo [supervisord] | tee -a /etc/supervisor/supervisord.conf ; echo nodaemon=true | tee -a /etc/supervisor/supervisord.conf
-
